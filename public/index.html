@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkStore - Produtos Sustentáveis e Ecológicos | Loja Online</title>
+    <meta name="description" content="Descubra produtos sustentáveis e ecológicos na BlinkStore. Moda consciente, beleza natural, casa sustentável e tecnologia verde. Viva de forma mais sustentável!">
+    <meta name="keywords" content="produtos sustentáveis, eco-friendly, moda sustentável, beleza natural, casa ecológica, tecnologia verde, sustentabilidade">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-leaf text-success me-2 fs-3"></i>
+                <span class="fw-bold text-success fs-4">BlinkStore</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex align-items-center">
+                    <div class="input-group me-3 d-none d-md-flex" style="width: 300px;">
+                        <input type="text" class="form-control" placeholder="Buscar produtos sustentáveis...">
+                        <button class="btn btn-outline-success" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                    
+                    <button class="btn btn-outline-success me-2 d-none d-md-inline">
+                        <i class="bi bi-person"></i>
+                    </button>
+                    
+                    <button class="btn btn-outline-success position-relative">
+                        <i class="bi bi-cart3"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                            0
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section position-relative">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container position-relative">
+            <div class="row min-vh-75 align-items-center justify-content-center text-center text-white">
+                <div class="col-lg-10">
+                    <h1 class="display-3 fw-bold mb-4">
+                        Viva de Forma 
+                        <span class="text-success">Sustentável</span>
+                    </h1>
+                    <p class="lead mb-5 fs-4">
+                        Descubra produtos ecológicos que fazem a diferença para você e para o planeta. 
+                        Cada escolha consciente constrói um futuro melhor.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                        <a href="#produtos" class="btn btn-success btn-lg px-5">
+                            Explorar Produtos
+                        </a>
+                        <a href="#sobre" class="btn btn-outline-light btn-lg px-5">
+                            Nossa Missão
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categorias" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark mb-4">Categorias Sustentáveis</h2>
+                <p class="lead text-muted col-lg-8 mx-auto">
+                    Explore nossa coleção cuidadosamente curada de produtos que respeitam o meio ambiente
+                </p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop" alt="Moda Sustentável" class="img-fluid">
+                        <div class="category-overlay"></div>
+                        <div class="category-icon">
+                            <i class="bi bi-bag text-success"></i>
+                        </div>
+                    </div>
+                    <div class="category-content p-4">
+                        <h4 class="fw-bold mb-2">Moda Sustentável</h4>
+                        <p class="text-muted mb-3">Roupas e acessórios eco-friendly</p>
+                        <small class="text-success fw-semibold">120+ produtos</small>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop" alt="Beleza Natural" class="img-fluid">
+                        <div class="category-overlay"></div>
+                        <div class="category-icon">
+                            <i class="bi bi-heart text-success"></i>
+                        </div>
+                    </div>
+                    <div class="category-content p-4">
+                        <h4 class="fw-bold mb-2">Beleza Natural</h4>
+                        <p class="text-muted mb-3">Cosméticos e cuidados naturais</p>
+                        <small class="text-success fw-semibold">85+ produtos</small>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop" alt="Casa Sustentável" class="img-fluid">
+                        <div class="category-overlay"></div>
+                        <div class="category-icon">
+                            <i class="bi bi-house text-success"></i>
+                        </div>
+                    </div>
+                    <div class="category-content p-4">
+                        <h4 class="fw-bold mb-2">Casa Sustentável</h4>
+                        <p class="text-muted mb-3">Itens ecológicos para o lar</p>
+                        <small class="text-success fw-semibold">95+ produtos</small>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400&h=300&fit=crop" alt="Tecnologia Verde" class="img-fluid">
+                        <div class="category-overlay"></div>
+                        <div class="category-icon">
+                            <i class="bi bi-phone text-success"></i>
+                        </div>
+                    </div>
+                    <div class="category-content p-4">
+                        <h4 class="fw-bold mb-2">Tecnologia Verde</h4>
+                        <p class="text-muted mb-3">Produtos tech sustentáveis</p>
+                        <small class="text-success fw-semibold">60+ produtos</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark mb-4">Produtos em Destaque</h2>
+                <p class="lead text-muted col-lg-8 mx-auto">
+                    Selecionamos os melhores produtos sustentáveis para um estilo de vida consciente
+                </p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop" alt="Camiseta Orgânica" class="img-fluid">
+                        <div class="product-badges">
+                            <span class="badge bg-danger">-25%</span>
+                            <span class="badge bg-success">Eco-Friendly</span>
+                        </div>
+                        <button class="btn btn-light product-favorite">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <div class="product-overlay">
+                            <button class="btn btn-success">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-light text-dark">Moda</span>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <small class="text-muted">4.8 (127)</small>
+                            </div>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Camiseta Orgânica de Algodão</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="h5 fw-bold text-success mb-0">R$ 89,90</span>
+                            <span class="text-muted text-decoration-line-through ms-2">R$ 119,90</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=400&fit=crop" alt="Shampoo Sólido" class="img-fluid">
+                        <div class="product-badges">
+                            <span class="badge bg-success">Eco-Friendly</span>
+                        </div>
+                        <button class="btn btn-light product-favorite">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <div class="product-overlay">
+                            <button class="btn btn-success">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-light text-dark">Beleza</span>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <small class="text-muted">4.9 (89)</small>
+                            </div>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Shampoo Sólido Natural</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="h5 fw-bold text-success mb-0">R$ 35,90</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=400&fit=crop" alt="Utensílios de Bambu" class="img-fluid">
+                        <div class="product-badges">
+                            <span class="badge bg-danger">-30%</span>
+                            <span class="badge bg-success">Eco-Friendly</span>
+                        </div>
+                        <button class="btn btn-light product-favorite">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <div class="product-overlay">
+                            <button class="btn btn-success">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-light text-dark">Casa</span>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <small class="text-muted">4.7 (203)</small>
+                            </div>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Conjunto de Utensílios de Bambu</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="h5 fw-bold text-success mb-0">R$ 45,90</span>
+                            <span class="text-muted text-decoration-line-through ms-2">R$ 65,90</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400&h=400&fit=crop" alt="Carregador Solar" class="img-fluid">
+                        <div class="product-badges">
+                            <span class="badge bg-success">Eco-Friendly</span>
+                        </div>
+                        <button class="btn btn-light product-favorite">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <div class="product-overlay">
+                            <button class="btn btn-success">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-light text-dark">Tecnologia</span>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <small class="text-muted">4.6 (45)</small>
+                            </div>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Carregador Solar Portátil</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="h5 fw-bold text-success mb-0">R$ 159,90</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop" alt="Bolsa Ecológica" class="img-fluid">
+                        <div class="product-badges">
+                            <span class="badge bg-danger">-25%</span>
+                            <span class="badge bg-success">Eco-Friendly</span>
+                        </div>
+                        <button class="btn btn-light product-favorite">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <div class="product-overlay">
+                            <button class="btn btn-success">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-light text-dark">Moda</span>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <small class="text-muted">4.5 (156)</small>
+                            </div>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Bolsa Ecológica de Juta</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="h5 fw-bold text-success mb-0">R$ 29,90</span>
+                            <span class="text-muted text-decoration-line-through ms-2">R$ 39,90</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&h=400&fit=crop" alt="Sabonete Artesanal" class="img-fluid">
+                        <div class="product-badges">
+                            <span class="badge bg-success">Eco-Friendly</span>
+                        </div>
+                        <button class="btn btn-light product-favorite">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <div class="product-overlay">
+                            <button class="btn btn-success">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-light text-dark">Beleza</span>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <small class="text-muted">4.9 (234)</small>
+                            </div>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Sabonete Artesanal de Lavanda</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="h5 fw-bold text-success mb-0">R$ 18,90</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1602874801006-4b841c7c9f8f?w=400&h=400&fit=crop" alt="Velas de Soja" class="img-fluid">
+                        <div class="product-badges">
+                            <span class="badge bg-success">Eco-Friendly</span>
+                        </div>
+                        <button class="btn btn-light product-favorite">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <div class="product-overlay">
+                            <button class="btn btn-success">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-light text-dark">Casa</span>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <small class="text-muted">4.8 (98)</small>
+                            </div>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Velas de Soja Aromáticas</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="h5 fw-bold text-success mb-0">R$ 42,90</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=400&fit=crop" alt="Fone de Madeira" class="img-fluid">
+                        <div class="product-badges">
+                            <span class="badge bg-danger">-28%</span>
+                            <span class="badge bg-success">Eco-Friendly</span>
+                        </div>
+                        <button class="btn btn-light product-favorite">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                        <div class="product-overlay">
+                            <button class="btn btn-success">
+                                <i class="bi bi-cart-plus me-2"></i>
+                                Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge bg-light text-dark">Tecnologia</span>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <small class="text-muted">4.4 (67)</small>
+                            </div>
+                        </div>
+                        <h5 class="fw-semibold mb-2">Fone de Ouvido de Madeira</h5>
+                        <div class="d-flex align-items-center">
+                            <span class="h5 fw-bold text-success mb-0">R$ 129,90</span>
+                            <span class="text-muted text-decoration-line-through ms-2">R$ 179,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-success btn-lg px-5">
+                    Ver Todos os Produtos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sobre" class="py-5 sustainability-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-dark mb-4">Nosso Compromisso com o Planeta</h2>
+                <p class="lead text-muted col-lg-10 mx-auto">
+                    Acreditamos que pequenas mudanças fazem grande diferença. Por isso, cada produto 
+                    em nossa loja é escolhido pensando no futuro do nosso planeta.
+                </p>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="sustainability-card text-center p-4">
+                        <div class="sustainability-icon mb-3">
+                            <i class="bi bi-leaf text-success"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">100% Eco-Friendly</h4>
+                        <p class="text-muted">
+                            Todos os produtos são cuidadosamente selecionados por seu baixo impacto ambiental
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="sustainability-card text-center p-4">
+                        <div class="sustainability-icon mb-3">
+                            <i class="bi bi-recycle text-success"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Embalagem Sustentável</h4>
+                        <p class="text-muted">
+                            Utilizamos apenas embalagens recicláveis e biodegradáveis em todos os envios
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="sustainability-card text-center p-4">
+                        <div class="sustainability-icon mb-3">
+                            <i class="bi bi-heart text-success"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Comércio Justo</h4>
+                        <p class="text-muted">
+                            Apoiamos produtores locais e práticas de comércio justo em toda nossa cadeia
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="sustainability-card text-center p-4">
+                        <div class="sustainability-icon mb-3">
+                            <i class="bi bi-globe text-success"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Impacto Positivo</h4>
+                        <p class="text-muted">
+                            Parte dos lucros é destinada a projetos de reflorestamento e conservação
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="impact-stats bg-white rounded-4 p-5 text-center shadow-sm">
+                        <h3 class="fw-bold mb-4">Junte-se ao Movimento Sustentável</h3>
+                        <p class="text-muted mb-4">
+                            Mais de 50.000 pessoas já escolheram viver de forma mais consciente. 
+                            Seja parte desta mudança positiva para o meio ambiente.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="impact-number text-success fw-bold display-6">250+</div>
+                                <div class="text-muted">Produtos Eco-Friendly</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="impact-number text-success fw-bold display-6">50k+</div>
+                                <div class="text-muted">Clientes Satisfeitos</div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="impact-number text-success fw-bold display-6">1M+</div>
+                                <div class="text-muted">Árvores Plantadas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-success text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <!-- Company Info -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-leaf me-2 fs-3"></i>
+                        <span class="fs-4 fw-bold">BlinkStore</span>
+                    </div>
+                    <p class="mb-4 opacity-75">
+                        Sua loja de produtos sustentáveis e ecológicos. Construindo um futuro 
+                        melhor através de escolhas conscientes.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white opacity-75 hover-opacity-100">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white opacity-75 hover-opacity-100">
+                            <i class="bi bi-instagram fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white opacity-75 hover-opacity-100">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white opacity-75 hover-opacity-100">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-white opacity-75 text-decoration-none hover-opacity-100">Sobre Nós</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white opacity-75 text-decoration-none hover-opacity-100">Produtos</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white opacity-75 text-decoration-none hover-opacity-100">Sustentabilidade</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white opacity-75 text-decoration-none hover-opacity-100">Blog</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white opacity-75 text-decoration-none hover-opacity-100">Carreiras</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Customer Service -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Atendimento</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-white opacity-75 text-decoration-none hover-opacity-100">Central de Ajuda</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white opacity-75 text-decoration-none hover-opacity-100">Política de Devolução</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white opacity-75 text-decoration-none hover-opacity-100">Envios e Entregas</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white opacity-75 text-decoration-none hover-opacity-100">Termos de Uso</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white opacity-75 text-decoration-none hover-opacity-100">Privacidade</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
+                    <p class="opacity-75 mb-3">
+                        Receba ofertas exclusivas e dicas de sustentabilidade
+                    </p>
+                    <div class="mb-3">
+                        <input type="email" class="form-control mb-2" placeholder="Seu e-mail">
+                        <button class="btn btn-light w-100">Inscrever-se</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="border-top border-white border-opacity-25 pt-4 mb-4">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope me-2 opacity-75"></i>
+                            <span class="opacity-75">contato@blinkstore.com.br</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-telephone me-2 opacity-75"></i>
+                            <span class="opacity-75"> 11 4002-8922</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-geo-alt me-2 opacity-75"></i>
+                            <span class="opacity-75">São Paulo, SP - Brasil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-top border-white border-opacity-25 pt-4 text-center">
+                <p class="opacity-75 mb-0">
+                    © 2025 BlinkStore. Todos os direitos reservados. Feito com 💚 para um mundo melhor.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
